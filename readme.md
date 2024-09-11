@@ -12,44 +12,34 @@ Funcionalidades principais:
 
 ## Histórias de usuário:
 
-### História 1:
-Solicitar Aluguel de Carro
+### História 1: Solicitar Aluguel de Carro
 Como cliente, desejo solicitar o aluguel de um carro, para que eu possa reservar o veículo de forma rápida.
 
-### História 2: 
-Alterar Dados do Pedido
+### História 2: Alterar Dados do Pedido
 Como cliente, desejo alterar os detalhes do meu pedido de aluguel, para corrigir ou ajustar informações de forma simples.
 
-### História 3: 
-Cancelar Pedido de Aluguel
+### História 3: Cancelar Pedido de Aluguel
 Como cliente, desejo cancelar meu pedido de aluguel, para que ele seja removido sem complicações.
 
-### História 4: 
-Ver Pedidos de Aluguel
+### História 4: Ver Pedidos de Aluguel
 Como cliente, desejo visualizar meus pedidos de aluguel, para acompanhar facilmente o status das solicitações.
 
-### História 5: 
-Avaliar Pedido Simplesmente
+### História 5: Avaliar Pedido Simplesmente
 Como agente, desejo avaliar pedidos de forma simples, para aprovar ou rejeitar com base em critérios básicos.
 
-### História 6: 
-Modificar Pedido de Cliente
+### História 6: Modificar Pedido de Cliente
 Como agente, desejo modificar pedidos de clientes de maneira rápida, para corrigir dados ou ajustar informações sem burocracia.
 
-### História 7: 
-Fazer Login Simples
+### História 7: Fazer Login Simples
 Como usuário, desejo fazer login no sistema de forma direta, para acessar minhas informações sem complicação.
 
-### História 8: 
-Recuperar Senha Rapidamente
+### História 8: Recuperar Senha Rapidamente
 Como usuário, desejo recuperar minha senha com um processo rápido, para que eu possa acessar o sistema sem dificuldades.
 
-### História 9: 
-Adicionar Novos Usuários
+### História 9: Adicionar Novos Usuários
 Como administrador, desejo adicionar novos usuários ao sistema, para permitir o acesso de forma simples e sem processos complicados.
 
-### História 10: 
-Atualizar Dados de Usuário Facilmente
+### História 10: Atualizar Dados de Usuário Facilmente
 Como administrador, desejo atualizar as informações de usuários, para manter os dados atualizados de maneira rápida e fácil.
 
 ---
