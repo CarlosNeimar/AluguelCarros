@@ -44,3 +44,7 @@ Como administrador, desejo atualizar as informações de usuários, para manter 
 
 ---
 
+## Diagrama de Casos de Uso
+
+
+
