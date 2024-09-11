@@ -46,5 +46,4 @@ Como administrador, desejo atualizar as informações de usuários, para manter 
 
 ## Diagrama de Casos de Uso
 
-
-
+![Diagramacasosdeuso](https://github.com/CarlosNeimar/AluguelCarros/blob/main/Docs/Casos%20de%20Uso%20-%20Aluguel%20de%20Carros.png)
