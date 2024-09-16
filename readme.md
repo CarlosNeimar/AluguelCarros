@@ -52,6 +52,10 @@ Como administrador, desejo atualizar as informações de usuários, para manter 
 ## Diagrama de Classes
 ![Captura de tela 2024-09-14 212916](https://github.com/user-attachments/assets/48250a60-d513-4898-bf95-39cf6f402edb)
 
+## Diagrama de pacotes
+![Captura de tela 2024-09-15 231513](https://github.com/user-attachments/assets/e52e29a4-1f83-4692-aca3-4cb708cfaed7)
+
+
 
 
 
