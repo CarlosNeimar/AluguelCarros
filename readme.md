@@ -55,6 +55,10 @@ Como administrador, desejo atualizar as informações de usuários, para manter 
 ## Diagrama de pacotes
 ![Captura de tela 2024-09-15 231513](https://github.com/user-attachments/assets/e52e29a4-1f83-4692-aca3-4cb708cfaed7)
 
+## Diagrama De Componentes
+![image](https://github.com/user-attachments/assets/2189336b-0897-4160-a99d-1f1b1a641930)
+
+
 
 
 
