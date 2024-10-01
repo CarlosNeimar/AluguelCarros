@@ -1,50 +1,23 @@
 package aluguelcarro.labdev.controllers;
 
-import aluguelcarro.labdev.models.User;
-import aluguelcarro.labdev.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import aluguelcarro.labdev.models.Cliente;
+import aluguelcarro.labdev.repositories.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-  @Autowired
-  private UserService userService;
+    private final UserRepository userRepository;
 
-  public UserController() {
-      System.out.println("UserController initialized");
-  }
-
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
+    public UserController(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable Long id) {
-        Optional<User> user = userService.findUserById(id);
-        return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
-    }
-
-    @GetMapping
-    public List<User> getAllUsers() {
-        return userService.findAllUsers();
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDetails) {
-        User updatedUser = userService.updateUser(id, userDetails);
-        return ResponseEntity.ok(updatedUser);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
-        userService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+    @PostMapping("/clientes")
+    public ResponseEntity<Cliente> createCliente(@RequestBody Cliente cliente) {
+        Cliente savedCliente = userRepository.save(cliente);
+        return ResponseEntity.ok(savedCliente);
     }
 }

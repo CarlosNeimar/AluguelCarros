@@ -29,14 +29,20 @@ public abstract class User {
     @Size(min = 3, max = 60)
     private String password;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "user_type", nullable = false)
+    @NotNull // Assegura que o tipo do usuário não seja nulo
+    private UserType userType;
+
     // Construtor padrão
     public User() {}
 
-    // Construtor com parâmetros (Long, String, String)
-    public User(Long id, String username, String password) {
+    // Construtor com parâmetros (Long, String, String, UserType)
+    public User(Long id, String username, String password, UserType userType) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.userType = userType; // Certifique-se de que este valor está sempre definido
     }
 
     // Getters e Setters
@@ -64,6 +70,14 @@ public abstract class User {
         this.password = password;
     }
 
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -72,21 +86,21 @@ public abstract class User {
             return false;
         }
         User user = (User) o;
-        return Objects.equals(id, user.id) && Objects.equals(username, user.username) 
-               && Objects.equals(password, user.password);
+        return Objects.equals(id, user.id) && Objects.equals(username, user.username)
+                && Objects.equals(password, user.password) && userType == user.userType;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username, password);
+        return Objects.hash(id, username, password, userType);
     }
 
     @Override
     public String toString() {
         return "{" +
-            " id='" + getId() + "'" +
-            ", username='" + getUsername() + "'" +
-            ", password='" + getPassword() + "'" +
-            "}";
+                " id='" + getId() + "'" +
+                ", username='" + getUsername() + "'" +
+                ", userType='" + getUserType() + "'" +
+                "}";
     }
 }

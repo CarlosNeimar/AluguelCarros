@@ -7,10 +7,13 @@ import javax.persistence.Table;
 @Table(name = "administradores")
 public class Administrador extends User {
 
-    public Administrador() {}
+    public Administrador() {
+        super();
+        this.setUserType(UserType.ADMIN);  // Definir o tipo como ADMIN
+    }
 
     public Administrador(Long id, String username, String password) {
-        super(id, username, password);
+        super(id, username, password, UserType.ADMIN);
     }
 
     @Override
@@ -18,6 +21,7 @@ public class Administrador extends User {
         return "Administrador{" +
             " id='" + getId() + "'" +
             ", username='" + getUsername() + "'" +
+            ", userType='" + getUserType() + "'" +
             "}";
     }
 }

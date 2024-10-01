@@ -10,10 +10,13 @@ public class Cliente extends User {
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Pedido> pedidos;
 
-    public Cliente() {}
+    public Cliente() {
+        super();
+        this.setUserType(UserType.CLIENT); // Define o tipo de usuário como CLIENT
+    }
 
     public Cliente(Long id, String username, String password, List<Pedido> pedidos) {
-        super(id, username, password);
+        super(id, username, password, UserType.CLIENT); // Define o tipo de usuário como CLIENT
         this.pedidos = pedidos;
     }
 
