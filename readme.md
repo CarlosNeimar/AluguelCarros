@@ -58,6 +58,10 @@ Como administrador, desejo atualizar as informações de usuários, para manter 
 ## Diagrama De Componentes
 ![image](https://github.com/user-attachments/assets/2189336b-0897-4160-a99d-1f1b1a641930)
 
+## Diagrama de implementação
+![image](https://github.com/user-attachments/assets/2ee61b3e-6934-4863-9cb3-90142eaf094c)
+
+
 
 
 
