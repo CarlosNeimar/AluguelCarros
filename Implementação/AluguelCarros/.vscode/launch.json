@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AluguelCarrosApplication<AluguelCarros>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.lab02.AluguelCarros.AluguelCarrosApplication",
+            "projectName": "AluguelCarros",
+            "args": ""
+        }
+    ]
+}

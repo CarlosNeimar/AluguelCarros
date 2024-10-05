@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "pivotal.vscode-boot-dev-pack",
+    "redhat.vscode-commons",
+    "redhat.fabric8-analytics",
+    "sohibe.java-generate-setters-getters",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "coenraads.bracket-pair-colorizer",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "yzhang.markdown-all-in-one",
+    "pkief.material-icon-theme",
+    "wayou.vscode-todo-highlight"
+  ]
+}
